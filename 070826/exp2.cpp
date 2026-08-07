@@ -22,8 +22,12 @@ class Student {
         }
 };
 int main() {
-    Student s;
+    Student s,s1,s2;
     s.inputDetails();
+    s1.inputDetails();
+    s2.inputDetails();
     s.displayDetails();
+    s1.displayDetails();
+    s2.displayDetails();
     return 0;
 }
