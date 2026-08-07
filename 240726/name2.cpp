@@ -4,15 +4,15 @@ using namespace std;
 
 namespace disha
 {
-    int add_sub()
+    int mul_div()
     {
         int a, b;
 
         cout << "Enter two numbers: ";
         cin >> a >> b;
 
-        cout << "The Sum is: " << a + b << endl;
-        cout << "The Sub is: " << a - b << endl;
+        cout << "The Multiplication is: " << a * b << endl;
+        cout << "The Division is: " << a / b << endl;
 
         return 0;
     }
