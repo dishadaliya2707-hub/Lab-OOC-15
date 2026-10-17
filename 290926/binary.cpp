@@ -11,10 +11,12 @@ public:
         this->feet = f;
         this->inch = i;
     }
-    Distance operator+(Distance& d2) {
-        Distance d3;
-        d3.feet = this->feet + d2.feet;
-        d3.inch = this->inch + d2.inch;
+    void operator+(Distance& d2) {
+       // Distance d3;
+        thid->feet = this->feet + d2.feet;
+        this->inch = this->inch + d2.inch;
+        cout<<"This is: "<<this->feet<<endl;
+        cout<<"d2 is: "<<d2.feet<<endl;
         return d3;
     }
 };
@@ -22,7 +24,7 @@ int main() {
     Distance d1(8, 9);
     Distance d2(10, 2);
     Distance d3;
-    d3 = d1 + d2;
+    d1 + d2;
     cout << "\nTotal Feet & Inches: " << d3.feet << "'" << d3.inch << endl;
     return 0;
 }
